@@ -1,0 +1,645 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>受眾群體模塊入門</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">布萊特灣觀眾<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+Brightcove 
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">首頁</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/get-started/">開始使用</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">受眾群體模塊入門</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/index.html">首頁</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">開始使<strong>用 + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-audience-module.html">開始使用受眾</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/audience-training-videos.html">觀眾訓練影片</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/index.html">一般資訊<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/audience-fields-and-data-definitions.html">受眾欄位和資料定義</a></li>
+                  
+                
+                  
+                    <li><a href="/general/configuring-audience-settings.html">設定對象設定</a></li>
+                  
+                
+                  
+                    <li><a href="/general/creating-audience-enabled-player.html">建立啟用受眾的播放程式</a></li>
+                  
+                
+                  
+                    <li><a href="/general/creating-audience-lead-form.html">建立受眾潛在客戶表單</a></li>
+                  
+                
+                  
+                    <li><a href="/general/how-audience-module-identifies-viewers.html">觀眾如何識別觀眾</a></li>
+                  
+                
+                  
+                    <li><a href="/general/publishing-video-email-using-audience-module.html">將視訊發佈至電子郵件</a></li>
+                  
+                
+                  
+                    <li><a href="/general/using-custom-metrics-and-events.html">使用自訂度量和事件</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-player-events-audience-module.html">檢視播放器事件</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-video-activity.html">檢視視訊活動</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-viewer-profile-information.html">檢視檢視器設定檔資訊</a></li>
+                  
+                
+                  
+                    <li><a href="/general/working-utm-fields-audience-module.html">使用 UTM 欄位</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/integrations/index.html">整合<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/integrations/eloqua/index.html">雄<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/integrations/eloqua/creating-custom-lead-forms-oracle-eloqua.html">建立自訂商機表單</a></li>
+                        
+                        <li><a href="/integrations/eloqua/eloqua-integration-testing-guide.html">Eloqua 集成測試指南</a></li>
+                        
+                        <li><a href="/integrations/eloqua/embedding-video-cloud-video-eloqua-landing-page.html">在登陸頁面上嵌入視訊</a></li>
+                        
+                        <li><a href="/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">與 Oracle 生態系統整合</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/integrations/hubspot/index.html">樞紐點<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/integrations/hubspot/creating-custom-lead-forms-hubspot.html">建立自訂商機表單</a></li>
+                        
+                        <li><a href="/integrations/hubspot/hubspot-rest-api-integration-testing-guide.html">應用程式介面測試指南</a></li>
+                        
+                        <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">與集成 (用戶端應用程式介面) </a></li>
+                        
+                        <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">與集成</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/integrations/marketo/index.html">市場<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/integrations/marketo/creating-custom-lead-forms-marketo.html">建立自訂商機表單</a></li>
+                        
+                        <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">與馬克托（蒙奇金）整合</a></li>
+                        
+                        <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">與市場集成 (REST API) </a></li>
+                        
+                        <li><a href="/integrations/marketo/marketo-rest-integration-testing-guide.html">市場 REST 集成測試指南</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/integrations/non-map/index.html">非對映<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/integrations/non-map/creating-custom-integrations-audience-module.html">建立自訂整合</a></li>
+                        
+                        <li><a href="/integrations/non-map/integrating-audience-single-sign.html">與單一登入整合</a></li>
+                        
+                        <li><a href="/integrations/non-map/using-audience-module-track-viewers.html">使用觀眾追蹤觀眾</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/integrations/salesforce/index.html">銷售人員<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/integrations/salesforce/creating-custom-lead-forms-salesforce.html">建立自訂商機表單</a></li>
+                        
+                        <li><a href="/integrations/salesforce/creating-custom-lead-forms-salesforce.html">為帕朵創建對象</a></li>
+                        
+                        <li><a href="/integrations/salesforce/integrating-video-cloud-salesforce.html">與銷售團隊整合</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html">管理受眾<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/exporting-audience-data-audience-module.html">從受眾匯出資料</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/exporting-gallery-lead-data.html">匯出主機庫商機資料</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-viewer-data.html">管理檢視器資料</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/troubleshooting-audience-issues.html">對象問題疑難排解</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/index.html">開發人員<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/overview-audience-api.html">概述：受眾 API </a></li>
+                  
+                
+                  
+                    <li><a href="/develop/reference.html">受眾 API 參考</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">頁面內容</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>受眾群體模塊入門</h1>
+  <summary>本主題提供用於追蹤視訊參與的觀眾模組概觀。</summary>
+  <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4582289844001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>Audience模塊用於跟踪在啟用Audience的Brightcove Player中查看的視頻的視頻參與數據。查看數據存儲在Video Cloud中，可以選擇同步到流行的營銷自動化平台，例如Eloqua，Marketo，HubSpot和Salesforce。</p>
+    <p>要訪問受眾模塊，請登錄視頻雲，然後單擊<strong>聽眾</strong>在導航標題中。Audience 首頁會顯示影片參與資料，讓您深入瞭解影片的觀看時間、觀看哪些影片，以及觀看影片的人員。這使您能夠更好地吸引您的受眾並轉化您的受眾。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-audience-ui.png"/></figure>
+    <p>首頁提供下列功能：</p>
+    <ul>
+      <li><a href="#performance">查看視頻效果</a></li>
+      <li><a href="#leads">查看潛在客戶的表現</a></li>
+      <li><a href="#status">查看受眾模塊狀態</a></li>
+    </ul>
+    <p>「觀眾」模組提供下列功能：</p>
+    <ul>
+      <li><a href="#connections">設置數據連接</a></li>
+      <li><a href="#players">創建受眾群體播放器</a></li>
+      <li><a href="#leadforms">創建和管理銷售線索表格</a></li>
+      <li><a href="#email">發佈到電子郵件</a></li>
+      <li><a href="#events">查看玩家事件</a></li>
+      <li><a href="#profiles">查看查看者資料</a></li>
+      <li><a href="#jobs">查看同步活動</a></li>
+      <li><a href="#settings">配置受眾群體設置</a></li>
+      <li><a href="#export">導出受眾群體數據</a></li>
+      <li><a href="#gallery_leads">出口畫廊線索</a></li>
+      <li><a href="#manage">管理查看者數據</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="performance">檢視視訊效能</h2>
+    <p>視訊效能區段為啟用觀眾的播放器內部播放的視訊提供高水準的視訊效能。</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">注意：受眾分析系統與一般的視訊雲端分析系統不同，而這兩個追蹤資料則不同。因此，如果您比較兩者，您會看到某些度量的差異。舉例來說，Video Cloud 分析系統會在影片開始時立即計算觀看次數，而 Audience 分析系統則不會計算影片的觀看次數，直到 10 秒鐘。因此，如果 14 位觀眾開始播放影片，但其中 6 位觀眾在播放 10 秒之前停止影片，影片雲端分析會顯示 14 次觀看次數，而「觀眾」模組則會顯示 8 次。</aside>
+    <p>首先選擇一個<strong>時間段</strong>對於圖表。提供以下選項：</p>
+    <ul>
+      <li>7 天</li>
+      <li>30天</li>
+      <li>90 天</li>
+    </ul>
+    <p>顯示以下圖表：</p>
+    <ul>
+      <li><a href="#viewed">觀看次數最多的視頻</a></li>
+      <li><a href="#engage">最吸引人的影片</a></li>
+      <li><a href="#trends">觀眾趨勢</a></li>
+    </ul>
+    <div id="viewed" class="BCL-subsection">
+      <h3>最多觀看的影片</h3>
+      <p>「最常觀看的影片」圖表顯示所選時段內已啟用受眾播放者的最多觀看影片。</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-most-viewed.png"/></figure>
+    </div>
+    <div id="engage" class="BCL-subsection">
+      <h3>最吸引人的影片</h3>
+      <p>最吸引人的影片圖表顯示所選時段內具有觀眾功能的玩家中最吸引人的影片。參與是平均觀看的百分比。有關我們如何計算視頻參與度的詳細信息，請觀看培訓視頻<a href="https://studio.support.brightcove.com/analytics/calculating-video-engagement-score.html">計算視頻參與度得分</a>。</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-most-engaging.png"/></figure>
+    </div>
+    <div id="trends" class="BCL-subsection">
+      <h3>檢視器趨勢</h3>
+      <p>「檢視器趨勢」圖表會顯示所選期間內一段時間內的視訊檢視。會顯示來自已知和匿名檢視者的檢視次數。將鼠標懸停在圖形上將顯示實際數據點。</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-viewer-trends.png"/></figure>
+      <aside class="bcls-aside bcls-aside--information">注意：使用 Marketo Munchkin 連線時，「檢視器趨勢」圖表只會顯示「未知檢視者」的資料。使用 Munchkin 連線時，不會收集使用者詳細資訊。有關更詳細的用戶信息，應該使用 Marketo REST 連接。有關信息，請參見<a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">使用REST API將Video Cloud與Marketo集成</a>。</aside>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="leads">檢視潛在客戶效能</h2>
+    <p>要查看銷售線索信息，請單擊<strong>潛在客戶</strong>標籤。請注意，只有在您的帳戶已建立客群潛在客戶表單時，才會出現 [商機] 索引標籤潛在客戶效能部分為啟用觀眾的播放器內播放的視訊提供高階潛在客戶效能。首先選擇一個<strong>時間段</strong>對於圖表。提供以下選項：</p>
+    <ul>
+      <li>7 天</li>
+      <li>30天</li>
+      <li>90 天</li>
+    </ul>
+    <p>顯示以下圖表：</p>
+    <ul>
+      <li><a href="#funnel">觀眾渠道</a></li>
+      <li><a href="#top">熱門轉換視頻</a></li>
+      <li><a href="#leads">潛在客戶圖表</a></li>
+    </ul>
+    <div id="funnel" class="BCL-subsection">
+      <h3>聽眾漏斗</h3>
+      <p>「觀眾漏斗」會在所選時段內，在具有觀眾領先表單的觀眾中，針對具有觀眾領先表單的影片顯示量度：</p>
+      <ul>
+        <li><strong>影片曝光</strong> -已加載的視頻數量</li>
+        <li><strong>影片觀看次數</strong> -視頻流開始播放的時間，在流開始時記錄的次數（不包括倒帶或重放）；它不能衡量單個觀眾</li>
+        <li><strong>潛在客戶表單視圖</strong> -潛在客戶表單瀏覽總數</li>
+        <li><strong>轉換次數</strong> -已提交的潛在顧客總數</li>
+      </ul>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-funnel.png"/></figure>
+    </div>
+    <div id="top" class="BCL-subsection">
+      <h3>熱門轉換視訊</h3>
+      <p>「熱門轉換視訊」圖表會顯示轉換率最高的視訊。轉換率的計算方法是將提交的潛在客戶表單數除以影片曝光次數除以。</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-top-conv.png"/></figure>
+    </div>
+    <div id="leads_chart" class="BCL-subsection">
+      <h3>潛在客戶圖表</h3>
+      <p>「潛在客戶圖表」會顯示所選期間內，依天提交的潛在客戶表單數目。將鼠標懸停在圖形上將顯示實際數據點。</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-leads-chart.png"/></figure>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="status">檢視對象模組狀態</h2>
+    <p>「觀眾狀態」區段會顯示「觀眾」模組的目前狀態。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-audience-status.png"/></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="connections">設定資料連線</h2>
+    <p>的<strong>數據連接</strong>選項是配置Audience集成的地方。受眾群體可以與流行的營銷自動化平台（“ MAP &nbsp;集成”）或觀看數據可以保存在本地，然後使用Audience API（“非MAP”集成）導出或提取。下表概述支援的整合。</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="300">地圖整合</th>
+          <th width="300">非MAP集成</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><ul>
+              <li><a href="/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">甲骨文埃洛卡</a></li>
+              <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">市場 (其他應用程式介面) </a></li>
+              <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">馬克托（蒙奇金）</a></li>
+              <li><a href="/integrations/salesforce/integrating-video-cloud-salesforce.html">銷售隊伍</a></li>
+              <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">中樞點 (其餘應用程式介面) </a></li>
+              <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">中樞 (用戶端 API) </a></li>
+            </ul></td>
+          <td><ul>
+              <li><a href="/integrations/non-map/creating-custom-integrations-audience-module.html">定制整合</a></li>
+              <li><a href="/integrations/non-map/integrating-audience-single-sign.html">單一登入</a></li>
+              <li><a href="/integrations/non-map/using-audience-module-track-viewers.html">觀眾追踪</a></li>
+            </ul></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>發佈啟用受眾的播放程式時，請使用進階嵌入 (頁內) 發佈程式碼。標準嵌入（iframe）發布代碼將無法工作，因為 Audience 插件將在 iframe 內運行，因此將無法訪問任何父頁面 URL 參數，並且可能無法獲得正確的 cookie。</p>
+    <aside class="bcls-aside bcls-aside--information">注意：可以設定的連線數目是根據您的 Video Cloud 訂閱而定。</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="players">建立受眾播放器</h2>
+    <p>的<strong>觀眾播放器</strong>選項可讓您創建啟用了受眾群體的Brightcove播放器。只有在具有觀眾功能的視訊播放器中檢視視訊內容時，才會錄製視訊參與資料。如需有關建立具有受眾功能的玩家的資訊，請參閱<a href="/general/creating-audience-enabled-player.html">建立具有受眾功能的播放</a>程式。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="leadforms">建立和管理潛在客戶表單</h2>
+    <p>的<strong>潛在客戶表格</strong>選項可讓您創建潛在客戶表單以進行數據捕獲。一旦建立潛在客戶表單，就可以與啟用受眾的播放器建立關聯。有關創建潛在客戶表單的信息，請參見<a href="/general/creating-audience-lead-form.html">建立觀眾&nbsp;潛在客戶表格</a>。您也可以建立並使用第三方行銷自動化平台內建立的潛在客戶表單。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="email">將視訊發佈至電子郵件</h2>
+    <p>的<strong>發佈到電子郵件</strong>選項可讓您選擇播放器，視頻，然後生成HTML嵌入代碼以通過電子郵件發送視頻。有關信息，請參見<a href="/general/publishing-video-email-using-audience-module.html">使用受眾模塊將視頻發佈到電子郵件</a>。</p>
+    <aside class="bcls-aside bcls-aside--information">注意：媒體模組也提供將視訊發佈至電子郵件的功能。如需詳細資訊，請參閱<a href="https://studio.support.brightcove.com/publish/publishing-video-email.html">將視訊發佈至電子郵件</a>。</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="events">檢視播放器事件</h2>
+    <p>的<strong>最近所有活動</strong>選項可讓您查看播放器，查看過去24小時內記錄的事件。如需資訊，請參閱<a href="/general/viewing-player-events-audience-module.html">檢視對象模組中的播放器事件</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="videoactivity">檢視視訊活動</h2>
+    <p>的<strong>影片（非MAP）</strong>選項可讓您查看視頻的觀看活動。如需詳細資訊，請參閱<a href="/general/viewing-video-activity.html">檢視視訊活動</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="profiles">檢視檢視器設定檔</h2>
+    <p>的<strong>查看者資料（非MAP）</strong>選項可讓您按查看器查看播放器查看事件。使用 SSO 或自訂整合或對象追蹤時，會啟用此選項。有關資訊，請參閱<a href="/general/viewing-viewer-profile-information.html">檢視檢視器設定檔資訊</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="jobs">檢視同步化活動</h2>
+    <p>的<strong>同步活動</strong>選項顯示從受眾群體同步到市場營銷自動化平台的最近10個作業。同步處理每小時執行。選擇一個連接，然後單擊<strong>測試同步</strong>按鈕運行同步。這在測試新的整合，以避免等待事件資料是否傳送到您的行銷自動化平台時，這會很有幫助。測試同步可以每 5 分鐘執行一次，最多每小時 10 次。</p>
+    <aside class="bcls-aside bcls-aside--information">注意：使用自訂整合時，不會建立同步化工作。只有在使用與行銷自動化平台整合時，才會建立同步作業。</aside>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/node15634-jobs.png"/></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="settings">設定對象設定</h2>
+    <p>的<strong>設定值</strong>選項可讓您為帳戶配置一些默認設置。有關信息，請參見<a href="/general/configuring-audience-settings.html">配置受眾群體設置</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">匯出受眾資料</h2>
+    <p>的<strong>導出受眾群體數據</strong>選項用於導出視圖事件和潛在客戶表單數據。此選項僅對帳戶管理員顯示。有關導出受眾群體數據的信息，請參閱<a href="/admin/exporting-audience-data-audience-module.html">從受眾模塊導出受眾數據</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="gallery_leads">匯出資源庫商機</h2>
+    <p>的<strong>出口畫廊線索</strong>選項用於導出從庫體驗中捕獲的潛在客戶表單數據。此選項僅對帳戶管理員顯示。有關導出圖庫線索數據的信息，請參見<a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">導出圖庫線索數據</a>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="manage">管理檢視器資料</h2>
+    <p>的<strong>管理查看器數據</strong>選項允許您搜索用戶，然後刪除該用戶或導出該用戶的數據。此選項僅對帳戶管理員顯示。有關管理查看器數據的信息，請參見<a href="/admin/managing-viewer-data.html">管理查看器數據</a>。</p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">頁面內容</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>布萊特灣支援</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">系統狀態</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">文獻資料</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>訓練</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">布萊特灣大學</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">亮麗</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
